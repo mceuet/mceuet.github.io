@@ -15,14 +15,35 @@
         margin: 0px;
         padding: 0px;
       }
+
       /* Looker studio Dashoard */
-      .Dashboard {
+      /* .bor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #fff; 
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+      } */
+
+      .Dashboard1 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         margin: 2rem 1rem;
         bottom: 1rem;
-        left: 50%;
+        margin-left: 20rem;
+        margin-top: 5rem;
+      }
+
+      .Dashboard2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2rem 1rem;
+        bottom: 1rem;
+        margin-left: 20rem;
       }
 
       .main-title {
@@ -449,11 +470,7 @@
           </div>
         </div>
 
-
-
-        
-
-        <div id="curriculum" class="tab-pane fade in ">
+        <div id="curriculum" class="tab-pane fade in">
           <h2>Curriculum</h2>
           <br />
           <div class="text-center">
@@ -547,7 +564,11 @@
         <div id="Faculty" class="tab-pane fade">
           <h2>Faculty Teams</h2>
           <div class="faculty-container">
-            <button type="button" class="btn btn-primary" onclick="FacultyData()">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="FacultyData()"
+            >
               <span>Faculty Data</span>
             </button>
             <button type="button" class="btn btn-primary" onclick="Chairman()">
@@ -621,11 +642,28 @@
       </div>
     </div>
 
-    <div class="Dashboard">
-    <br>
-    <iframe width="1100" height="500" src="https://lookerstudio.google.com/embed/reporting/6be05bce-0466-4772-a78f-f66d437bbbe0/page/IEjbD" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-    <iframe width="1100" height="825" src="https://lookerstudio.google.com/embed/reporting/ee3a7c70-b926-4c79-b629-fe6b17391630/page/JMUaD" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="bor">
+      <div class="Dashboard1">
+        <br />
+        <iframe
+          width="1100"
+          height="500"
+          src="https://lookerstudio.google.com/embed/reporting/6be05bce-0466-4772-a78f-f66d437bbbe0/page/IEjbD"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="Dashboard2">
+        <iframe
+          width="1100"
+          height="825"
+          src="https://lookerstudio.google.com/embed/reporting/ee3a7c70-b926-4c79-b629-fe6b17391630/page/JMUaD"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -641,7 +679,7 @@
           "https://docs.google.com/spreadsheets/d/12o_Bx7GylkGF3Bu1UpK_bsaGxsDcT6Qj8RtgFL7uVYA/edit#gid=0"
         );
       }
-      
+
       function academicTasks() {
         window.open(
           "https://docs.google.com/spreadsheets/d/1W984KJ0u3LMZZWclM-A8A3EgL9GFA1TruA3T-ji04dY/edit#gid=169444166"
