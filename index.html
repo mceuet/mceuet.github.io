@@ -357,6 +357,9 @@
 
       <ul class="nav nav-pills">
         <li class="active">
+          <a id="fac0" data-toggle="pill" href="#taskstatus">Task Status</a>
+        </li>
+        <li>
           <a id="fac0" data-toggle="pill" href="#curriculum">Curriculum</a>
         </li>
 
@@ -418,6 +421,32 @@
             </button>
           </div>
         </div>
+
+        <div id="taskstatus" class="tab-pane fade in active">
+          <h2>Tasks Status</h2>
+          <br />
+          <div class="text-center">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="adminTasks()"
+            >
+              <span>Admin Tasks</span>
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="academicTasks()"
+            >
+              <span>Academic Tasks</span>
+            </button>
+          </div>
+        </div>
+
+
+
+        
 
         <div id="curriculum" class="tab-pane fade in active">
           <h2>Curriculum</h2>
@@ -615,6 +644,18 @@
       function toggleFillEffect() {
         var plusIcon = document.querySelector(".plus-icon");
         plusIcon.classList.toggle("clicked");
+      }
+
+      function adminTasks() {
+        window.open(
+          "https://docs.google.com/spreadsheets/d/12o_Bx7GylkGF3Bu1UpK_bsaGxsDcT6Qj8RtgFL7uVYA/edit#gid=0"
+        );
+      }
+      
+      function academicTasks() {
+        window.open(
+          "https://docs.google.com/spreadsheets/d/1W984KJ0u3LMZZWclM-A8A3EgL9GFA1TruA3T-ji04dY/edit#gid=169444166"
+        );
       }
       function gradCurriculum() {
         window.open(
